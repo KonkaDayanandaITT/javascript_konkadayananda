@@ -49,14 +49,14 @@
 // the way where a searches for the reference is called scope chain
 //it goes step step by step outwards until it finds variable
 
-// function out(){
-//     var count = 0;
-//     return function inn(){
-//         count++;
-//         console.log(count);
-//     }
-// }
+function out(){
+    var count = 0;
+    return function inn(){
+        count++;
+        console.log(count);
+    }
+}
 
-// const counter = out();
-// counter();
-// coutetr();
+const counter = out();
+counter();
+counter();
